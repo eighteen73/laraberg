@@ -5,6 +5,10 @@
   "directories": {
     "test": "tests"
   },
+  "engines": {
+    "node": "~18"
+  },
+  "engineStrict": true,
   "scripts": {
     "clean": "rm -rf public/css public/js",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -38,9 +42,5 @@
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
     "webpack-merge": "^5.10.0"
-  },
-  "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
   }
 }
