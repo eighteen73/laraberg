@@ -5,7 +5,7 @@ const oembedHandler = async (options) => {
     const params = qs.parse(query)
     const url = new URL('/laraberg/oembed', window.location.origin)
 
-    url.searchParams.append('url', params.url)
+    url.searchParams.append('url', qs.stringify(params.url))
 
     const res = await fetch(url.toString())
     return await res.json()
